@@ -68,6 +68,9 @@ shutdown now
 <p align="center">
   <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/7.png" alt="Header">
 </p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/da03bab488523f6cf2f76be1be1ce9c95fca2558/img/8.png" alt="Header">
+</p>
 
 Клонируем Centos и выбираем опцию, что нужно сгенерировать новые MAC-адреса всех сетевых адаптеров, потому что нам потребуются уникальные маки для всех наших виртуальных машин. Также выбираем связанный клон в опции, чтобы сэкономить место
 
