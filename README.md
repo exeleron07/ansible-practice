@@ -74,7 +74,40 @@ shutdown now
 
 Клонируем Centos и выбираем опцию, что нужно сгенерировать новые MAC-адреса всех сетевых адаптеров, потому что нам потребуются уникальные маки для всех наших виртуальных машин. Также выбираем связанный клон в опции, чтобы сэкономить место
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/9.png" alt="Header">
+</p>
 
+Теперь подключаемся к этим машинам по очереди через команду 'ssh your_ip'
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/10.png" alt="Header">
+</p>
+
+Подключение прошло успешно 
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/11.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/12.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/13.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/14.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/58d2752cee3f004a2cfc14a934542515f971fef6/img/15.png" alt="Header">
+</p>
+
+Теперь поменяем хосты названий, чтобы было более понятнее при работе. Вводим команду, после чего меняем на нужное название и выходим из редактора, сохраняем (esc + :wq)
+
+```bash
+sudo vi /etc/hostname
+sudo vi /etc/hosts
+```
 
 
 
