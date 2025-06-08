@@ -35,3 +35,28 @@ sudo yum install epel-release
 sudo yum install ansible
 ansible --version
 ```
+
+## Настройка
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/85584da117e0d5a8206295c4a7f59accea823e8f/img/4.png" alt="Header">
+</p>
+
+Прежде чем запустить шаблон, нам нужно войти в настройки и внести несколько изменений. Настроим адаптер в режиме мостовой сети. Внутренняя машина получит ip-адрес и также сможет подключаться к интернету для загрузки и установки пакетов по мере необходимости
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
