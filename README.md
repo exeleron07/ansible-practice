@@ -50,11 +50,20 @@ ansible --version
 
 Войду в линукс, посмотрю ip-адрес через команду ip addr и подключусь через SSH в MobaXterm
 
+```bash
+ip addr
+```
+
 <p align="center">
   <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/6.png" alt="Header">
 </p>
 
-Далее покажу подключение в MobaXterm, чтобы в виртуалке создать наши клоны
+Далее покажу подключение в MobaXterm, чтобы в виртуалке создать наши клоны. Команда 'su - root' отвечает за подключение к рут правам, команда 'shutdown now' перезапускает систему
+
+```bash
+su - root
+shutdown now
+```
 
 <p align="center">
   <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/7.png" alt="Header">
