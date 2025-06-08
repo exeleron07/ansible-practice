@@ -28,7 +28,7 @@
   <img src="https://github.com/exeleron07/ansible-practice/blob/fcb390092d48468490d85d98b508acc69ac6ad48/img/3.png" alt="Header">
 </p>
 
-Команда sudo systemctl status docker сообщает о состоянии докера. Перед этим не забудьте установить его для Ubuntu (команды прикрепляю):
+Команда sudo yum install epel-release устанавливает репозиторий EPEL (Extra Packages for Enterprise Linux) на CentOS, RHEL или другие совместимые дистрибутивы. Команда sudo yum install ansible устанавливает Ansible на CentOS, RHEL или другие совместимые дистрибутивы, использующие пакетный менеджер yum. Команда ansible --version выводит информацию об установленной версии Ansible и его зависимостях
 
 ```bash
 sudo yum install epel-release
