@@ -157,6 +157,37 @@ ssh your_ip
 
 Можем закрыть и прервать связь
 
+```bash
+exit
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/d6620b394dfc928a350e0384ef057be04593a811/img/23.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/d6620b394dfc928a350e0384ef057be04593a811/img/24.png" alt="Header">
+</p>
+
+Чтобы проверить возможность подключения через Ansible, создадим тестовый проект. Создаем папку, переходим в неё и создаем inventory файл. В этом файле будет одна запись для целевого хоста
+
+```bash
+mkdir project
+cd project/
+cat > inventory
+target1 ansible_host=192.168.0.105 ansible_ssh_pass=your_pass
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
