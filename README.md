@@ -177,12 +177,59 @@ cat > inventory
 target1 ansible_host=192.168.0.105 ansible_ssh_pass=your_pass
 ```
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/25.png" alt="Header">
+</p>
 
+Команда 'ansible target1 -m ping -i inventory' проверяет доступность целевого хоста (target1) через Ansible, используя модуль ping и inventory-файл. Есть inventory файл с псевдонимом моего целевого сервера, его ip-адресом и паролем и это означает, что мы можем запустить проверку, выполнив команду:
 
+```bash
+ansible target1 -m ping -i inventory
+```
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/26.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/27.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/28.png" alt="Header">
+</p>
 
+Когда мы нажали энтер, ansible выполнил ping-тест и мы убедились может ли ansible установить успешное соединение с нашей целевой машиной. В этом случае он говорит об успехе и возвращает сообщение о понге.
+Создадим ещё один клон: ansible-target 2, войдем туда и посмотрим ip-адрес
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/29.png" alt="Header">
+</p>
 
+Теперь отредактируем файл inventory файл и добавим информацию об target2
+
+```bash
+ansible_ssh_pass=your_pass
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/30.png" alt="Header">
+</p>
+
+Как мы можем заметить тест для target 1 прошёл успешно, а для target 2 нет
+
+```bash
+ansible target1 -m ping -i inventory
+ansible target2 -m ping -i inventory
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e76cb953c6b11453dc0c88bab46ec1e176a6f094/img/31.png" alt="Header">
+</p>
+
+Исправляем данную ситуацию (отключаем проверку ключа хоста). Если добавление вручную неудобно, временно отключите проверку ключей, добавив следующие настройки в команду Ansible:
+
+```bash
+ansible target2 -m ping -i inventory --ssh-extra-args="-o StrictHostKeyChecking=no
+```
 
 
 
