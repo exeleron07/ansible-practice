@@ -108,6 +108,35 @@ shutdown now
 sudo vi /etc/hostname
 sudo vi /etc/hosts
 ```
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/0ea35bedf61921d11a81934734ed59f0b0b909e0/img/16.png" alt="Header">
+</p>
+
+Перезапускаем машину и делаем всё также в точности с другой машиной 
+
+```bash
+shutdown -r now
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/0ea35bedf61921d11a81934734ed59f0b0b909e0/img/17.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/0ea35bedf61921d11a81934734ed59f0b0b909e0/img/18.png" alt="Header">
+</p>
+
+Хосты успешно поменяли
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/0ea35bedf61921d11a81934734ed59f0b0b909e0/img/19.png" alt="Header">
+</p>
+
+Проверяю, что ansible стоит на моих машинах
+
+```bash
+ansible --version
+```
+
 
 
 
