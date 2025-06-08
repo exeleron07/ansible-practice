@@ -136,6 +136,26 @@ shutdown -r now
 ```bash
 ansible --version
 ```
+## Тестируем связь с Ansible 
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e1e2c2ac5bd5247870bade31c5a216aed8ed923e/img/20.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e1e2c2ac5bd5247870bade31c5a216aed8ed923e/img/21.png" alt="Header">
+</p>
+
+Смотрим какой ip-адрес у второй машины, после чего от первой подключаемся ко второй
+
+```bash
+ssh your_ip
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/e1e2c2ac5bd5247870bade31c5a216aed8ed923e/img/22.png" alt="Header">
+</p>
+
+Можем закрыть и прервать связь
 
 
 
