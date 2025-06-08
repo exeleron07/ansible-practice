@@ -15,3 +15,23 @@
 - `ansible target1 -m ping -i inventory` - 123
 - `ansible target2 -m ping -i inventory --ssh-extra-args="-o StrictHostKeyChecking=no"` - 123
 ---
+
+## Установка Ansible на Centos9
+
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/fcb390092d48468490d85d98b508acc69ac6ad48/img/1.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/fcb390092d48468490d85d98b508acc69ac6ad48/img/2.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/fcb390092d48468490d85d98b508acc69ac6ad48/img/3.png" alt="Header">
+</p>
+
+Команда sudo systemctl status docker сообщает о состоянии докера. Перед этим не забудьте установить его для Ubuntu (команды прикрепляю):
+
+```bash
+sudo yum install epel-release
+sudo yum install ansible
+ansible --version
+```
