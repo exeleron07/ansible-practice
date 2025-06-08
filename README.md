@@ -44,16 +44,23 @@ ansible --version
 
 Прежде чем запустить шаблон, нам нужно войти в настройки и внести несколько изменений. Настроим адаптер в режиме мостовой сети. Внутренняя машина получит ip-адрес и также сможет подключаться к интернету для загрузки и установки пакетов по мере необходимости
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/5.png" alt="Header">
+</p>
 
+Войду в линукс, посмотрю ip-адрес через команду ip addr и подключусь через SSH в MobaXterm
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/6.png" alt="Header">
+</p>
 
+Далее покажу подключение в MobaXterm, чтобы в виртуалке создать наши клоны
 
+<p align="center">
+  <img src="https://github.com/exeleron07/ansible-practice/blob/9d191e7f2f6fe373b2686e656b39a1495e1f276e/img/7.png" alt="Header">
+</p>
 
-
-
-
-
-
+Клонируем Centos и выбираем опцию, что нужно сгенерировать новые MAC-адреса всех сетевых адаптеров, потому что нам потребуются уникальные маки для всех наших виртуальных машин. Также выбираем связанный клон в опции, чтобы сэкономить место
 
 
 
