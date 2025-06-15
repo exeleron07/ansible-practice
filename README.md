@@ -5,15 +5,15 @@
 
 ## Основные команды в работе с Ansible
 
-- `sudo yum install epel-release` — 123
-- `sudo yum install ansible` - 123
-- `ansible --version` - 123
-- `sudo vi /etc/hostname` - 123
-- `sudo vi /etc/hosts` - 123
-- `ssh your_ip` - 123
-- `cat > inventory` `target1 ansible_host=your_ip ansible_ssh_pass=your_pass` - 123 - 123
-- `ansible target1 -m ping -i inventory` - 123
-- `ansible target2 -m ping -i inventory --ssh-extra-args="-o StrictHostKeyChecking=no"` - 123
+- `sudo yum install epel-release` — Команда для установки EPEL (Extra Packages for Enterprise Linux) репозитория
+- `sudo yum install ansible` - Команда используется для установки Ansible
+- `ansible --version` - Команда показывает установленную версию Ansible и информацию о его окружении
+- `sudo vi /etc/hostname` - Команда открывает файл /etc/hostname в текстовом редакторе vi с правами суперпользователя
+- `sudo vi /etc/hosts` - Команда открывает системный файл /etc/hosts в редакторе vi с правами суперпользователя
+- `ssh your_ip` - Команда используется для удалённого подключения к серверу или другой машине по SSH-протоколу (Secure Shell) 
+- `cat > inventory` `target1 ansible_host=your_ip ansible_ssh_pass=your_pass` - 1) Команда означает: создать файл с именем inventory и записывать в него текст, который ты введёшь вручную; 2) Команда форматирует строку для статического инвентарного файла Ansible в ini-формате. Вот что делает каждая часть: target1 — это имя хоста, которым ты будешь оперировать в Ansible (локальное имя), ansible_host=your_ip — реальный IP-адрес или доменное имя удалённой машины, ansible_ssh_pass=your_pass — пароль для SSH-подключения к удалённой машине
+- `ansible target1 -m ping -i inventory` - Команда для проверки подключения к хосту target1 (target1 — имя хоста из inventory файла, -m ping — использует модуль ping Ansible, чтобы проверить SSH-доступ, -i inventory указывает путь к инвентарному файлу (например, ./inventory).
+- `ansible target2 -m ping -i inventory --ssh-extra-args="-o StrictHostKeyChecking=no"` - target2 — имя хоста, которое должно быть указано в inventory, -m ping — Ansible модуль ping, проверяет доступность, -i inventory — путь к инвентарному файлу, --ssh-extra-args="-o StrictHostKeyChecking=no" — отключает проверку ключа хоста при первом подключении (чтобы не спрашивало yes/no).
 ---
 
 ## Установка Ansible на Centos9
